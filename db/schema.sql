@@ -6,5 +6,6 @@ CREATE TABLE burgers(
 	burger_name VARCHAR(255) NOT NULL,
 	devoured BOOLEAN DEFAULT false,
 	date TIMESTAMP,
+	ctime timestamp not null default current_timestamp,
 	PRIMARY KEY (id)
 );
